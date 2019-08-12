@@ -1,0 +1,195 @@
+    body{ 
+  	 padding: 0;
+  	 margin:0;
+  	 font-family: sans-serif;
+    /*// background-image: url(../img/01.jpg);*/
+    /* background-size: cover;*/
+     background-color: #4573AE;
+    
+   }
+   *{
+   	padding: 0;
+  	 margin:0;
+   	 list-style: none;
+   }
+	a{
+		text-decoration: none;
+		color: inherit;
+	}	
+	/*主体内容*/
+	
+	.bigbox{
+		position: absolute;
+		top: 60%;
+		left: 10%;
+		transform: translate(-50%,-50%);
+		padding: 40px;		
+	}
+	.bigbox div{
+		display: flex;
+		width: 200px;
+	    height: 100px;
+		color: #fff;		
+		justify-content: center;
+	    align-items: center;
+	    transition: .3s;	   	    		
+	}
+	.bigbox div:hover{
+		margin: 20px;
+		cursor: pointer;
+		
+		box-shadow: 0 15px 15px rgba(0,0,0,.5);
+		
+	}
+	.bigbox div:nth-child(1){
+		background-color: #F08080;
+	}
+	.bigbox div:nth-child(2){
+		background-color: #03A9F4;
+	}
+	.bigbox div:nth-child(3){
+		background-color: #20B2AA;
+	}
+	.bigbox div:nth-child(4){
+		background-color: #FFC125;
+	}
+	
+	/*添加页面*/
+	
+	.login-box{
+		border: 1px solid black;
+	    border-radius: 10px;
+		width: 400px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		box-shadow: 0 15px 25px rgba(0,0,0,.5);
+		box-sizing: border-box;
+		background: rgba(0,0,0,.8);
+		padding: 40px;
+		display: none;
+	}
+	.login-box h3{
+		text-align: center;
+		padding: 0;
+		color: #fff;
+	}
+	.int-box{
+		position: relative;
+	}
+	.login-box .int-box input{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        margin-bottom: 30px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        color: #fff;
+	}
+	.login-box .int-box label{
+		color: #fff;
+		position: absolute;
+		top: 0;
+		left: 0;
+		 padding: 10px 0;
+        font-size: 16px;
+        transition: 0.5s;
+        pointer-events: none;
+	}
+	.login-box .int-box input:focus ~ label,
+    .login-box .int-box input:valid ~ label{
+		top: -18px;
+		left: 0;
+		color: #03a9f4;
+		font-size: 12px;
+	}
+	.login-box>.sex>input{
+		margin-left: 38px;
+        width: 31%;
+        margin-bottom: 24px;
+	}
+    .login-box>.sex>span{
+       color: #FFFFFF;
+       position: relative;
+       left: -99px;
+       color: #FFFFFF;
+    }
+    .addbtn,.addbtn2{
+    	background-color: #03A9F4;
+    	outline: none;
+    	border: 1px solid #03A9F4;
+    	color: #FFFFFF;
+    	font-size: 16px;
+    	border-radius: 10px;
+    	padding:5px 10px;
+    	cursor: pointer; 
+    	transition: .3s;  	
+    }
+    .addbtn:hover,.addbtn2:hover{
+    
+    	padding:7px 12px;
+    }
+    .addbtn2{
+    	margin-left: 50px;
+    }
+    
+    .int-box span:first-child{
+    	position: absolute;
+    	color: #FFFFFF;
+        top: -20px;
+        left: 207px;
+        font-size: 12px;
+        display: none;
+    }
+    .btn-span{
+    	display: none;
+    }
+    
+    .seek-box{
+    	margin: auto;
+    	width: 1200px;
+    	height: 100%;
+    	display: flex;
+    	align-items: center; 
+      
+    }          
+    .seek-box li{
+    	float: left;
+    	width: 200px;
+    	text-align: center;
+    	padding: 5px 0; 
+     	
+    }
+   .seek-box-conten{
+   	margin: auto;
+   	padding: 40px;
+   }
+   .seek-box li:nth-child(2), .seek-box li:nth-child(3){
+  	width:80px;  	
+   }
+   .seek-box-int{
+   	display: none;
+   	 position: absolute;
+   	 top: 10px;
+  	
+   }
+   .home{
+   	position: fixed;
+   	top: 80%;
+   	left: 70%;
+   	padding: 10px;
+   	font-size: 25px;
+   	border-radius: 10px;
+   	outline: none;
+   	border: none;
+   	transition: .3s;
+   }
+   .home:hover{
+   	cursor: pointer;
+   	box-shadow:5px 5px 20px 2px rgba(0,0,0,.5);
+   	top: 81%;
+   	left:69% ;
+   }

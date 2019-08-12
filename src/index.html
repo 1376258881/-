@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<body>
+	<h3>首页</h3>
+	<!--首页菜单-->
+	 <div class="bigbox" >
+		  <div class="add">
+		  	添加
+		  </div>	
+		  <div class="del">
+		  	删除
+		  </div>	
+		 	
+		  <div class="revise">
+		  	修改
+		  </div>		
+		 
+	      <div class="seek">
+		  	查找
+		  </div>	
+	 	
+	 </div>
+	
+	
+		
+	<!--添加页面-->
+	
+	 <div class="login-box">
+	    <h3>添加数据</h3>
+	    <div class="int-box">   
+	    	<span>提示信息</span>
+	     <input type="text" class="int-uname" required="">
+	     <label>昵称</label>
+	    </div>
+	    <div class="sex int-box">    
+	      <input type="radio" class="int-men" required="" name="sex" checked="checked"><span>男</span>
+	      <input type="radio" class="int-grl" required="" name="sex" ><span>女</span>
+	      <label>性别</label>
+	    </div>
+	    <div class="int-box">    
+	    	<span>提示信息</span>
+	      <input type="text" class="int-age" required="">
+	      <label>年龄</label>
+	    </div>
+	    <div class="int-box">    
+	    	<span>提示信息</span>
+	      <input type="email" class="int-email" required="">
+	      <label>email</label>
+	    </div>
+	    <div class="int-box"> 
+	    	<span>提示信息</span>
+	      <input type="tel" class="int-tel" required="">
+	      <label>电话</label>
+	    </div>
+	    <input type="submit" name="data" class="addbtn" value="添加" />
+	    <input type="button"  class="addbtn2" value="取消" />
+	    <span class="btn-span">填写有误或未完成</span>
+	  </div>
+	
+	
+    <!--查找页面-->
+    <div class="seek-box" >
+    	<!--用户数据-->
+    	<div class="seek-box-int">
+    		   		
+    	  <input type="text" class="seekname" placeholder="请输入查找姓名" /> 
+    	  <input type="text" class="seeksex" placeholder="请输入查找性别" />
+    	  <input type="text" class="seekage" placeholder="请输入查找年龄" />
+    	  <input type="text" class="seekmail" placeholder="请输入查mail" />
+    	  <input type="text" class="seektel" placeholder="请输入电话" />
+    	  <button class="seekbtn">查找</button>
+        </div>
+    	<div class="seek-box-conten">   		   	
+	    	<ul>
+	    		<li>姓名</li>
+	    		<li>性别</li>
+	    		<li>年龄</li>
+	    		<li>mail</li>
+	    		<li>电话</li>
+	    		<li>操作</li>
+	    	</ul>
+    	</div>     	
+    </div>     
+     <input type="button" onclick="home()" class="home" value="返回首页" />  
+  
+ <script type="text/javascript" src="js/index.js"></script>
+
+  
+ 	
+ 	
+ 	
+ 
+  
+  
+</body>
+</html>
