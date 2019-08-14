@@ -45,6 +45,7 @@ function F5() {
  	var addbtn = getClass("addbtn"); //添加页 添加 按钮
  	var adduname = getClass("int-uname");//用户名
  	var addsex = getClass("int-grl") //性别
+ 	var addsex2 = getClass("int-men") //性别
  	var addage = getClass("int-age")//年龄
  	var addemail = getClass("int-email")//邮箱
  	var addtel = getClass("int-tel")//电话
@@ -62,11 +63,16 @@ function F5() {
  	var sex_judge = 0; //默认为男
    
 	addsex.onchange = function(){
-	   	if(addsex.checked){
+	   	if(sex_judge==0){
 	   		sex_judge=1;  
 	   	}
 	}
-		
+    addsex2.onchange = function(){
+	   	if(sex_judge==1){
+	   		sex_judge=0;  
+	   	}		
+	}
+
 	//正则提示	
  	 function reg_onfocus (reg,i) {
       	 reg.lastIndex = 0; 	    	
@@ -314,7 +320,7 @@ function F5() {
 		    var lis = this.parentElement.parentElement.childNodes
 		    var ints = login_box.getElementsByTagName("input")	    
 	    	if (lis[1].innerHTML=="男" ) {
-	    			ints[1].checked = true
+	    			 ints[1].checked = true
 	    	}else if (lis[1].innerHTML=="女" ){
 	    			 ints[2].checked = true	 
 	    	}  
